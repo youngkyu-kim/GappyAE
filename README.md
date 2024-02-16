@@ -9,6 +9,9 @@ Add GIF
 c++ source code
 command
 
+param = 0.75
+add video
+
 ## Training
 add figure
 
