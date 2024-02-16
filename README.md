@@ -4,6 +4,7 @@ This repository contains Jupyter notebooks for numerical examples of the paper t
 Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to generate training data. Please refer to the paper for more details. Since the size of the training data is large, we do not upload it here. The training data will be provided upon request via email at youngkyu_kim@berkeley.edu.
 
 Add GIF
+problem type and equation
 
 ## Data generation
 c++ source code
