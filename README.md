@@ -13,11 +13,20 @@ Below figures show five snapshots for two extreme parameter values.
 ![](diffusion_mu1_sol.png)
 *Diffusion simulation solutions from the initial to the final time for param=0.75*
 
-Diffusion, param = 1.25
-Advection, param = 0.75
-Advection, param = 1.25
-Wave, param = 0.75
-Wave, param = 1.25
+![](diffusion_mu2_sol.png)
+*Diffusion simulation solutions from the initial to the final time for param=1.25*
+
+![](advection_mu1_sol.png)
+*Advection simulation solutions from the initial to the final time for param=0.75*
+
+![](advection_mu2_sol.png)
+*Advection simulation solutions from the initial to the final time for param=1.25*
+
+![](wave_mu1_sol.png)
+*Wave simulation solutions from the initial to the final time for param=0.75*
+
+![](wave_mu2_sol.png)
+*Wave simulation solutions from the initial to the final time for param=1.25*
 
 ## Model Training
 add figure nm모델 설명하는 그림
