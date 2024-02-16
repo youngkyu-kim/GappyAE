@@ -6,7 +6,10 @@ Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to gener
 Add GIF
 
 ## Data generation
+c++ source code
+command
 
 ## Training
+add figure
 
 ## Run gappy codes
