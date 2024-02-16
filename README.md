@@ -32,9 +32,11 @@ Below figures show five snapshots for two extreme parameter values.
 *Wave simulation solutions from the initial to the final time for param=1.25*
 
 ## Model Training
-add figure nm모델 설명하는 그림
+![](model_training.png)
+
 
 ## Data Reconstruction
+![](data_reconstruction.png)
 explain file name
 gappy_XXX_XXX_XXX_XXXX
 
