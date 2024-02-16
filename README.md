@@ -19,4 +19,6 @@ add figure nm모델 설명하는 그림
 explain file name
 gappy_XXX_XXX_XXX_XXXX
 
-## Citation
+## Authors
+- Youngkyu Kim (KIST)
+- Hyeokmin Lee (KIST)
