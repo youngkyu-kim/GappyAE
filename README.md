@@ -41,11 +41,9 @@ To find nonlinear manifold denoted as function $g(\hat{x})$, run "train_NM_XXX.i
 
 "gappyAE_[problem_type]_[measurement_region]_[sampling_algorithm].ipynb" files in "3_Data_Reconstruction" run a data reconstruction algorithm.
 
-problem_type: diffusion/advection/wave
-
-measurment_region: inner/bndry
-
-sampling_algorithm: uniform/LHS/DEIM/SOPT
+- problem_type: diffusion/advection/wave
+- measurment_region: inner/bndry
+- sampling_algorithm: uniform/LHS/DEIM/SOPT
 
 ## Authors
 - Youngkyu Kim (KIST)
