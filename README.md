@@ -10,12 +10,9 @@ Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to gener
 2. Run shell scripts in "1_Data_Generation" folder to generate training data.  
 
 Below figures show five snapshots for two extreme parameter values.
+
 ![](diffusion_mu1_sol.png)
 *Diffusion simulation solutions from the initial to the final time for param=0.75*
-<figure>
-    <img src='diffusion_mu1_sol.png' alt=''>
-    <figcaption>Diffusion simulation solutions from the initial to the final time for param=0.75</figcaption>
-</figure>
 
 ![](diffusion_mu2_sol.png)
 *Diffusion simulation solutions from the initial to the final time for param=1.25*
