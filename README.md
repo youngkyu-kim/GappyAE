@@ -6,11 +6,16 @@ Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to gener
 ![](gappyAE_ani.gif)
 
 ## Data Generation
-c++ source code
-command
+1. Build [LaSDI] (https://github.com/LLNL/LaSDI) or [MFEM](https://mfem.org/) with souce codes and makefiles located in "1_Data_Generation" folder.
+2. Run shell scripts to generate training data.  
 
-param = 0.75
-add video
+Below animations are the contour plots for two extreme parameters.
+Diffusion, param = 0.75
+Diffusion, param = 1.25
+Advection, param = 0.75
+Advection, param = 1.25
+Wave, param = 0.75
+Wave, param = 1.25
 
 ## Model Training
 add figure nm모델 설명하는 그림
