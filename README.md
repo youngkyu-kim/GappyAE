@@ -34,6 +34,7 @@ Below figures show five snapshots for two extreme parameter values.
 ## Model Training
 ![](model_training.png)
 
+To find nonlinear manifold denoted as function $$g(\hat{x})$$, run "train_NM_XXX.ipynb" in "2_Model_Training" folder.
 
 ## Data Reconstruction
 ![](data_reconstruction.png)
