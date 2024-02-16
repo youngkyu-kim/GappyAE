@@ -16,5 +16,7 @@ add video
 add figure
 
 ## Run gappy codes
+explain file name
+gappy_XXX_XXX_XXX_XXXX
 
 ## Citaation
