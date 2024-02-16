@@ -13,7 +13,7 @@ param = 0.75
 add video
 
 ## Training
-add figure
+add figure nm모델 설명하는 그림
 
 ## Run gappy codes
 explain file name
