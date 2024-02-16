@@ -13,7 +13,7 @@ Below figures show five snapshots for two extreme parameter values.
 ![](diffusion_mu1_sol.png)
 *Diffusion simulation solutions from the initial to the final time for param=0.75*
 <figure>
-    <img src='diffusion_mu1_sol.png' alt='missing' />
+    <img src='diffusion_mu1_sol.png' alt=''>
     <figcaption>Diffusion simulation solutions from the initial to the final time for param=0.75</figcaption>
 </figure>
 
