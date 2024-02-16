@@ -6,6 +6,8 @@ Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to gener
 ![](gappyAE_ani.gif)
 
 ## Data Generation
+![](data_generation.png)
+
 1. Build [LaSDI](https://github.com/LLNL/LaSDI) or [MFEM](https://mfem.org/) with souce codes and makefiles located in "1_Data_Generation" folder.
 2. Run shell scripts in "1_Data_Generation" folder to generate training data.  
 
