@@ -45,6 +45,8 @@ To find nonlinear manifold denoted as function $g(\hat{x})$, run "train_NM_XXX.i
 - MEASUREMENT_REGION: inner/bndry
 - SAMPLING_ALGORITHM: uniform/LHS/DEIM/SOPT
 
+Note: You need to build [pylibROM](https://github.com/LLNL/pylibROM) and run python scripts in "SOPT_scripts" folder to get SOPT sample points. 
+
 ## Authors
 - Youngkyu Kim (KIST)
 - Hyeokmin Lee (KIST)
