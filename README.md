@@ -9,8 +9,10 @@ Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to gener
 1. Build [LaSDI] (https://github.com/LLNL/LaSDI) or [MFEM](https://mfem.org/) with souce codes and makefiles located in "1_Data_Generation" folder.
 2. Run shell scripts to generate training data.  
 
-Below animations are the contour plots for two extreme parameters.
-Diffusion, param = 0.75
+Below figures show five snapshots for two extreme parameter values.
+![](path_to_image)
+*Diffusion simulation solutions from the initial to the final time for param=0.75*
+
 Diffusion, param = 1.25
 Advection, param = 0.75
 Advection, param = 1.25
