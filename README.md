@@ -5,17 +5,17 @@ Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to gener
 
 ![](gappyAE_ani.gif)
 
-## Data generation
+## Data Generation
 c++ source code
 command
 
 param = 0.75
 add video
 
-## Training
+## Model Training
 add figure nm모델 설명하는 그림
 
-## Run gappy codes
+## Data Reconstruction
 explain file name
 gappy_XXX_XXX_XXX_XXXX
 
