@@ -55,7 +55,7 @@ Note: You need to build [pylibROM](https://github.com/LLNL/pylibROM) and run pyt
 Kim, Y., Choi, Y., & Yoo, B. (2023). Gappy Data Reconstruction using Unsupervised Learning for Digital Twin. arXiv preprint arXiv:2312.07902.
 ```
 
-## Bibtex
+## Citation
 ```
 @article{kim2023gappy,
   title={Gappy Data Reconstruction using Unsupervised Learning for Digital Twin},
