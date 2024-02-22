@@ -9,9 +9,9 @@ Note that an open-source FEM solver, [MFEM](https://mfem.org/) was used to gener
 ![](data_generation.png)
 
 1. Build [LaSDI](https://github.com/LLNL/LaSDI) or [MFEM](https://mfem.org/) with souce codes and makefiles located in "1_Data_Generation" folder.
-    - Example 9 or Advection Problem
-    - Example 16 or Diffusion Problem
-    - Example 23 or Wave Problem
+    - Example 9 (Advection Problem)
+    - Example 16 (Diffusion Problem)
+    - Example 23 (Wave Problem)
 2. Run shell scripts in "1_Data_Generation" folder to generate training data.  
 
 Below figures show five snapshots for two extreme parameter values.
