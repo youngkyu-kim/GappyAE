@@ -26,12 +26,13 @@
 using namespace std;
 using namespace mfem;
 
-/** After spatial discretization, the wave model can be written as:
+/** After spatial discretization, the conduction model can be written as:
  *
  *     d^2u/dt^2 = M^{-1}(-Ku)
  *
- *  where u is the vector representing the temperature, M is the mass,
- *  and K is the stiffness matrix.
+ *  where u is the vector representing the temperature, M is the mass matrix,
+ *  and K is the diffusion operator with diffusivity depending on u:
+ *  (\kappa + \alpha u).
  *
  *  Class WaveOperator represents the right-hand side of the above ODE.
  */
@@ -169,7 +170,7 @@ WaveOperator::~WaveOperator()
 
 double InitialSolution(const Vector &x)
 {
-   return exp(-x.Norml2()*x.Norml2()*30);
+   return exp(-x.Norml2()*x.Norml2()*3);
 }
 
 double InitialRate(const Vector &x)
@@ -192,7 +193,7 @@ int main(int argc, char *argv[])
    bool visualization = true;
    bool visit = true;
    bool dirichlet = true;
-   int vis_steps = 5;
+   int vis_steps = 1;
 
    int precision = 8;
    cout.precision(precision);
@@ -300,7 +301,7 @@ int main(int argc, char *argv[])
    Vector dudt;
    dudt_gf.GetTrueDofs(dudt);
 
-   // 7. Initialize the wave operator and the visualization.
+   // 7. Initialize the conduction operator and the visualization.
    Array<int> ess_bdr;
    if (mesh->bdr_attributes.Size())
    {
@@ -355,7 +356,7 @@ int main(int argc, char *argv[])
       else
       {
          sout.precision(precision);
-         sout << "solution\n" << *mesh << u_gf;
+         sout << "solution\n" << *mesh << dudt_gf;
          sout << "pause\n";
          sout << flush;
          cout << "GLVis visualization paused."

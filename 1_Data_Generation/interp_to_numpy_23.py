@@ -38,4 +38,4 @@ for t in t_steps:
         final[index,i]=u.GetValue(interp[1][i], intpoints[i])
           
 final = final.reshape(-1,60**2).astype('float32')
-np.savez_compressed('ex23_interp_sample', final)
+np.savez_compressed('ex23_interp_{}'.format(sys.argv[1]), final)
