@@ -13,11 +13,14 @@ import sys
 print('Number of arguments:', len(sys.argv), 'arguments.')
 print('Argument List:', str(sys.argv))
 
-
-path = "/Users/youngkyukim/mfem-4.5/examples"
-meshfile = join(path,'Example23_000000','mesh.000000')
-print(meshfile)
+path = dirname(dirname(__file__))
+meshfile = expanduser(join(path, 'examples','ex23_sim','Example23_000000','mesh.000000'))   
 mesh = mfem.Mesh(meshfile)
+
+# path = "/Users/youngkyukim/mfem-4.5/examples"
+# meshfile = join(path,'Example23_000000','mesh.000000')
+# print(meshfile)
+# mesh = mfem.Mesh(meshfile)
 
 x = np.linspace(0,1,60)
 y = np.linspace(0,1,60)
@@ -30,9 +33,10 @@ tf=5.0; tstep=1.0e-2
 t_steps = np.arange(int(tf/tstep)+1)
 index = -1
 final = np.empty([len(t_steps), points.shape[0]])
-for t in t_steps:
+for t in tqdm(t_steps):
     index += 1
-    gf_file = join(path,'Example23_{}/solution.000000'.format(str(t).zfill(6)))
+    gf_file = 'ex23_sim/Example23_{}/solution.000000'.format(str(t).zfill(6))
+    # gf_file = join(path,'Example23_{}/solution.000000'.format(str(t).zfill(6)))
     u = mfem.GridFunction(mesh, gf_file)
     for i in range(points.shape[0]):
         final[index,i]=u.GetValue(interp[1][i], intpoints[i])
