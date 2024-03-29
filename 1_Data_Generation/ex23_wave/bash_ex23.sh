@@ -19,18 +19,18 @@ rm ex23_interp_*.npz
 rm -rf ex23_sim
 mkdir ex23_sim
 make ex23 -f makefile_ex23
-rm -rf ~/LaSDI/wave_eqn/timeit_FOM.txt
+rm -rf ~/LaSDI/ex23_wave/timeit_FOM.txt
 
 for i in $(seq 75 1 125)
 #for i in $(seq 75 1 75)
 do
-	echo $i >> ~/LaSDI/wave_eqn/timeit_FOM.txt
+	echo $i >> ~/LaSDI/ex23_wave/timeit_FOM.txt
         rm -rf ex23_sim/* 
 	# if [ $i = 100 ]; then
 	# 	start_time=$(date +%s.%3N)
 	# 	./ex23 -m ../data/inline-quad.mesh -r 4 -o 4 -s 10 -tf 5.0 -dt 1.0e-2 -c $( echo "scale=2; $i/100" | bc ) -neu -vs 1
 	# 	end_time=$(date +%s.%3N)
-	# 	echo "scale=3; $end_time - $start_time" | bc > ~/LaSDI/wave_eqn/timeit_FOM.txt
+	# 	echo "scale=3; $end_time - $start_time" | bc > ~/LaSDI/ex23_wave/timeit_FOM.txt
 	# else
 	# 	./ex23 -m ../data/inline-quad.mesh -r 4 -o 4 -s 10 -tf 5.0 -dt 1.0e-2 -c $( echo "scale=2; $i/100" | bc ) -neu -vs 1
 	# fi
@@ -38,7 +38,7 @@ do
 	./ex23 -m ../data/inline-quad.mesh -r 4 -o 3 -s 10 -tf 5.0 -dt 1.0e-2 -c $( echo "scale=2; $i/100" | bc ) -neu -vs 1
 	# ./ex23 -m ../data/inline-quad.mesh -r 4 -o 4 -s 10 -tf 5.0 -dt 1.0e-2 -c $( echo "scale=2; $i/100" | bc ) -neu -vs 1
 	end_time=$(date +%s.%3N)
-	echo "scale=3; $end_time - $start_time" | bc >> ~/LaSDI/wave_eqn/timeit_FOM.txt	
+	echo "scale=3; $end_time - $start_time" | bc >> ~/LaSDI/ex23_wave/timeit_FOM.txt	
 	mv -f Example23* ex23_sim
     mv -f ex23*gf ex23_sim
 	mv -f ex23.mesh ex23_sim
@@ -46,7 +46,7 @@ do
 done
 
 make clean
-cd ../../../wave_eqn/
+cd ../../../ex23_wave/
 rm -rf data
 mkdir data
 mv -f $MFEM_DIR/ex23_interp_*.npz ./data/
