@@ -30,7 +30,7 @@ make lasdi_ex16 -f makefile_ex16
 # 			start_time=$(date +%s.%3N)
 # 			./lasdi_ex16 -m ../data/inline-tri.mesh -vs 1 -r 3 -visit -freq $((i/100)).$((i%100)) -am $((j/100)).$((j%100)) -tf 1.5 -dt 1.0e-3
 # 			end_time=$(date +%s.%3N)
-# 			echo "scale=3; $end_time - $start_time" | bc > ~/LaSDI/Diffusion/timeit_FOM.txt
+# 			echo "scale=3; $end_time - $start_time" | bc > ~/LaSDI/ex16_diffusion/timeit_FOM.txt
 # 		else
 # 			./lasdi_ex16 -m ../data/inline-tri.mesh -vs 1 -r 3 -visit -freq $((i/100)).$((i%100)) -am $((j/100)).$((j%100)) -tf 1.5 -dt 1.0e-3
 # 		fi
@@ -40,18 +40,18 @@ make lasdi_ex16 -f makefile_ex16
 # 	done
 # done
 
-rm -rf ~/LaSDI/Diffusion/timeit_FOM.txt
+rm -rf ~/LaSDI/ex16_diffusion/timeit_FOM.txt
 j=50
 for i in $(seq 75 1 125)
 #for i in $(seq 75 1 75)
 do
-	echo $i >> ~/LaSDI/Diffusion/timeit_FOM.txt	
+	echo $i >> ~/LaSDI/ex16_diffusion/timeit_FOM.txt	
 	rm -rf ex16_sim/*
 	# if [ $i = 100 ]; then
 	# 	start_time=$(date +%s.%3N)
 	# 	./lasdi_ex16 -m ../data/inline-tri.mesh -vs 1 -r 3 -visit -freq $((i/100)).$((i%100)) -am $((j/100)).$((j%100)) -tf 1.0 -dt 2.0e-3 -k 0.05 -a 1.0e-2
 	# 	end_time=$(date +%s.%3N)
-	# 	echo "scale=3; $end_time - $start_time" | bc > ~/LaSDI/Diffusion/timeit_FOM.txt
+	# 	echo "scale=3; $end_time - $start_time" | bc > ~/LaSDI/ex16_diffusion/timeit_FOM.txt
 	# else
 		# ./lasdi_ex16 -m ../data/inline-tri.mesh -vs 1 -r 3 -visit -freq $((i/100)).$((i%100)) -am $((j/100)).$((j%100)) -tf 1.0 -dt 2.0e-3 -k 0.05 -a 1.0e-2
 	# fi
@@ -59,7 +59,7 @@ do
 	./lasdi_ex16 -m ../data/inline-quad.mesh -vs 1 -o 2 -r 4 -s 3 -visit -freq $( echo "scale=2; $i/100" | bc ) -am $( echo "scale=2; $j/100" | bc ) -tf 1.0 -dt 2.0e-3 -k 0.05 -a 1.0e-2
 	# ./lasdi_ex16 -m ../data/inline-quad.mesh -vs 1 -r 4 -visit -freq $((i/100)).$((i%100)) -am $((j/100)).$((j%100)) -tf 1.0 -dt 2.0e-3 -k 0.05 -a 1.0e-2
 	end_time=$(date +%s.%3N)
-	echo "scale=3; $end_time - $start_time" | bc >> ~/LaSDI/Diffusion/timeit_FOM.txt	
+	echo "scale=3; $end_time - $start_time" | bc >> ~/LaSDI/ex16_diffusion/timeit_FOM.txt	
 	mv -f Example16* ex16_sim
 	mv -f ex16*gf ex16_sim
 	mv -f ex16.mesh ex16_sim
@@ -67,7 +67,7 @@ do
 done
 
 make clean
-cd ../../../Diffusion/
+cd ../../../ex16_diffusion/
 rm -rf data
 mkdir data
 mv -f $MFEM_DIR/ex16_interp_*.npz ./data/
