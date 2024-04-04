@@ -9,8 +9,7 @@ import _pylibROM.hyperreduction as hyperreduction
 num_samples = 12
 
 # latent space dim.
-# f_list=np.array([3,4,5,6])
-f_list=np.array([6])
+f_list=np.array([3,4,5,6])
 
 # NM model seed
 seed=1 # change
