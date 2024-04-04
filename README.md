@@ -24,7 +24,7 @@ Packages required by the project can be installed using the following command:
 
 ## Data Generation
 <!--![](imgs/data_generation.png)-->
-<img src="imgs/data_generation.png" width="60%" height="60%">
+<img src="imgs/data_generation.png" width="75%" height="75%">
 
 **GappyAE**  
 To clone this repository, open your terminal and run the following command:
