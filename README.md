@@ -23,7 +23,8 @@ Packages required by the project can be installed using the following command:
  ```
 
 ## Data Generation
-![](imgs/data_generation.png)
+<!--![](imgs/data_generation.png)-->
+<img src="imgs/data_generation.png" width="60%" height="60%">
 
 **GappyAE**  
 To clone this repository, open your terminal and run the following command:
@@ -138,7 +139,7 @@ To find POD basis denoted as function $\Phi$, you need to do SVD.
 
 ## Data Reconstruction
 <!--![](imgs/data_reconstruction.png)-->
-<img src="imgs/data_reconstruction.png" width="75%" height="75%">
+<img src="imgs/data_reconstruction.png" width="60%" height="60%">
 
 
 **Gappy AE**
@@ -189,7 +190,6 @@ cd path/to/your/pylibROM_docker
 
 cp -r tests/SOPT_scripts/SOPT_sample_points path/to/your/GappyAE/__model
 ```
-
 
 
 ## Paper
