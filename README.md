@@ -138,7 +138,7 @@ To find POD basis denoted as function $\Phi$, you need to do SVD.
 
 ## Data Reconstruction
 <!--![](imgs/data_reconstruction.png)-->
-<img src="imgs/data_reconstruction.png" width="50%" height="50%">
+<img src="imgs/data_reconstruction.png" width="75%" height="75%">
 
 
 **Gappy AE**
