@@ -137,7 +137,8 @@ To find POD basis denoted as function $\Phi$, you need to do SVD.
 2. Trained models are saved in `__model`
 
 ## Data Reconstruction
-![](imgs/data_reconstruction.png)
+<!--![](imgs/data_reconstruction.png)-->
+<img src="imgs/data_reconstruction.png" width="50%" height="50%">
 
 
 **Gappy AE**
