@@ -128,13 +128,13 @@ Below figures show five snapshots for two extreme parameter values.
 **AE**  
 To find nonlinear manifold denoted as function $g(\hat{x})$, you need to train auto-encoders.
 
-1. Move to 2_Model_Training folder and run `train_NM_XXX.ipynb`
+1. Move to `2_Model_Training` folder and run `train_NM_XXX.ipynb`
 2. Trained models are saved in `__model`
 
 **POD**  
 To find POD basis denoted as function $\Phi$, you need to do SVD.
 
-1. Move to 2_Model_Training folder and run `train_LS_XXX.ipynb`
+1. Move to `2_Model_Training` folder and run `train_LS_XXX.ipynb`
 2. Trained models are saved in `__model`
 
 ## Data Reconstruction
@@ -156,7 +156,7 @@ To find POD basis denoted as function $\Phi$, you need to do SVD.
 - `[MEASUREMENT_REGION]`: inner/bndry
 - `[SAMPLING_ALGORITHM]`: uniform/LHS/DEIM/*SOPT
 
-*Note: You need to build [pylibROM](https://github.com/LLNL/pylibROM) and run python scripts in "SOPT_scripts" folder to get SOPT sample points. If you want to skip this step, you can use the SOPT sample points that are provided in "2.5_SOPT/SOPT_sample_points" folder.
+*Note: You need to build [pylibROM](https://github.com/LLNL/pylibROM) and run python scripts in `SOPT_scripts` folder to get SOPT sample points. If you want to skip this step, you can use the SOPT sample points that are provided in `2.5_SOPT/SOPT_sample_points` folder.
 
 **SOPT(optional)**
 ```bash
